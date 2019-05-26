@@ -35,7 +35,7 @@
         </service>
 
         <!-- Twig extension providing the |shortcodes filter. The content will be passed to the ShortcodeFacade. -->
-        <service class="Webfactory\ShortcodeBundle\Twig\ShortcodeExtension">
+        <service id="webfactory.shortcode.twig_extension" class="Webfactory\ShortcodeBundle\Twig\ShortcodeExtension">
             <argument type="service" id="webfactory.shortcode.facade"/>
             <tag name="twig.extension"/>
         </service>
